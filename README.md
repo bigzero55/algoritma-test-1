@@ -1,4 +1,9 @@
-# ALGORITMA
+# Algoritma Test
+
+# How to Test
+Akses file index.html
+
+# Soal
 1. Terdapat string "NEGIE1", silahkan reverse alphabet nya dengan angka tetap diakhir kata Hasil = "EIGEN1"
 
 2. Diberikan contoh sebuah kalimat, silahkan cari kata terpanjang dari kalimat tersebut, jika ada kata dengan panjang yang sama silahkan ambil salah satu
