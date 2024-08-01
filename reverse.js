@@ -1,33 +1,17 @@
-function reverseAlphabet() {
-  // Mengambil input dari form
+function reverseStringWithNumber() {
   var input = document.getElementById("input1").value;
+  let letters = "";
+  let number = "";
 
-  // Inisialisasi variabel pemisahan huruf dan angka
-  var alphabets = "";
-  var number = "";
-
-  // Memisahkan huruf dan angka secara manual
-  for (var i = 0; i < input.length; i++) {
-    // Mengambil karakter saat ini
-    var char = input[i];
-
-    // Memeriksa apakah karakter saat ini adalah angka
-    if (isNaN(char)) {
-      // jika bukan angka, tambahkan ke variabel huruf
-      alphabets += char;
+  for (let i = 0; i < input.length; i++) {
+    if (isNaN(input[i])) {
+      letters += input[i];
     } else {
-      // jika angka, tambahkan ke variabel angka
-      number += char;
+      number += input[i];
     }
   }
 
-  // Membalikkan urutan huruf
-  var reversedAlphabets = "";
-  for (var j = alphabets.length - 1; j >= 0; j--) {
-    // Menambahkan karakter saat ini ke variabel huruf terbalik
-    reversedAlphabets += alphabets[j];
-  }
-
-  // Menampilkan hasil dalam elemen output
-  document.getElementById("output1").innerText = reversedAlphabets + number;
+  let reversedLetters = letters.split("").reverse().join("");
+  let result = reversedLetters + number;
+  document.getElementById("output1").innerText = result;
 }
