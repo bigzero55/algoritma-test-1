@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Algoritma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Soal Algoritma</h1>
+
+    <!-- Bagian form -->
+    <section id="form-container">
+        <!-- Soal 1 -->
+        <form id="form1">
+            <h2>Soal 1: Reverse Alphabet</h2>
+            <!-- Input string -->
+            <input type="text" id="input1" placeholder="Masukkan string (contoh: NEGIE1)">
+            <!-- Bagian tombol -->
+            <div id="button-container">
+                <!-- Tombol proses -->
+                <button type="button" onclick="reverseAlphabet()">Proses</button>
+                <!-- Tombol reset -->
+                <button type="reset" onclick="resetForm1()">Reset</button>
+            </div>
+            <!-- Bagian hasil -->
+            <p>Hasil: <span id="output1"></span></p>
+        </form>
+
+        <!-- Soal 2 -->
+        <form id="form2">
+            <h2>Soal 2: Cari Kata Terpanjang</h2>
+            <!-- Input kalimat -->
+            <input type="text" id="input2" placeholder="Masukkan kalimat">
+            <!-- Bagian tombol -->
+            <div id="button-container">
+                <!-- Tombol proses -->
+                <button type="button" onclick="findLongestWord()">Proses</button>
+                <!-- Tombol reset -->
+                <button type="reset" onclick="resetForm2()">Reset</button>
+            </div>
+            <!-- Bagian hasil -->
+            <p>Hasil: <span id="output2"></span></p>
+        </form>
+
+        <!-- Soal 3 -->
+        <form id="form3">
+            <h2>Soal 3: Jumlah Kemunculan Kata</h2>
+            <!-- Input array INPUT -->
+            <input type="text" id="input3a" placeholder="Masukkan array INPUT (contoh: xc,dz,bbb,dz)">
+            <!-- Input array QUERY -->
+            <input type="text" id="input3b" placeholder="Masukkan array QUERY (contoh: bbb,ac,dz)">
+            <!-- Bagian tombol -->
+            <div id="button-container">
+                <!-- Tombol proses -->
+                <button type="button" onclick="countOccurrences()">Proses</button>
+                <!-- Tombol reset -->
+                <button type="reset" onclick="resetForm3()">Reset</button>
+            </div>
+            <!-- Bagian hasil -->
+            <p>Hasil: <span id="output3"></span></p>
+        </form>
+
+        <!-- Soal 4 -->
+        <form id="form4">
+            <h2>Soal 4: Selisih Diagonal Matriks</h2>
+            <!-- Input matriks NxN -->
+            <textarea id="input4" rows="4"
+                placeholder="Masukkan matriks NxN (contoh: [[1,2,0],[4,5,6],[7,8,9]])"></textarea>
+            <!-- Bagian tombol -->
+            <div id="button-container">
+                <!-- Tombol proses -->
+                <button type="button" onclick="calculateDiagonalDifference()">Proses</button>
+                <!-- Tombol reset -->
+                <button type="reset" onclick="resetForm4()">Reset</button>
+            </div>
+            <!-- Bagian hasil -->
+            <p>Hasil: <span id="output4"></span></p>
+        </form>
+    </section>
+
+    <!-- Bagian JavaScript -->
+    <script>
+        // Fungsi reset untuk form
+        function resetForm1() {
+            // Mengosongkan output hasil dari form 1
+            document.getElementById("output1").innerText = "";
+        }
+
+        function resetForm2() {
+            // Mengosongkan output hasil dari form 2
+            document.getElementById("output2").innerText = "";
+        }
+
+        function resetForm3() {
+            // Mengosongkan output hasil dari form 3
+            document.getElementById("output3").innerText = "";
+        }
+
+        function resetForm4() {
+            // Mengosongkan output hasil dari form 4
+            document.getElementById("output4").innerText = "";
+        }
+    </script>
+    <!-- Menghubungkan file JavaScript -->
+    <script src="reverse.js"></script>
+    <script src="longest.js"></script>
+    <script src="query.js"></script>
+    <script src="diagonal.js"></script>
+</body>
+
+</html>
